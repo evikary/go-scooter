@@ -29,16 +29,16 @@
     .wrapper {
         width: 1440px;
         margin: 0 auto;
-        padding-left: 262px;
       }
 
-    .header-wrapper {
-      /* width: 1440px;
-      margin: 0 auto;
-      padding-left: 262px; */
-      /* background-image: url(../assets/bg_header.png); */
-      /* background-size: cover; */
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+    .header-bg {
+      width: 100%;
+      background-image: url('../assets/bg.png');
+      background-size: cover;
+    }
+
+    .header-wrapper, .main-wrapper, .footer-wrapper {
+      padding-left: 262px;
     }
   
     .yandex-go {
@@ -232,12 +232,57 @@
         margin-top: 105px;
     }
 
+    .in-plus-box1 {
+      position: relative;
+      margin-bottom: 128px;
+    }
+
     .description-in-plus {
         color: #21201F;
         font-family: YS Text;
         font-size: 24px;
         font-weight: 500;
         line-height: 120%; /* 28.8px */
+    }
+
+    .img1-in-plus {
+      position: absolute;
+      top: -240px;
+      right: 66px;
+    }
+
+    .in-plus-box2 {
+      margin-left: 476px;
+    }
+
+    .img2-in-plus {
+      position: absolute;
+      left: -250px;
+    }
+
+    .subscription-terms {
+      margin-top: 111px;
+      margin-bottom: 128px;
+    }
+
+    .subscription {
+      color: #C5C5C5;
+      font-family: 'YS Text';
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 15.6px */
+    }
+
+    .link {
+      text-decoration: none;
+      color: #C5C5C5;
+      font-family: 'YS Text';
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      text-decoration-line: underline;
     }
   
   
