@@ -1,0 +1,44 @@
+.grid-layout-2-column {
+    display: grid;
+    width: 927px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 51px 202px 262px 202px 262px 202px;
+    gap: 8px;
+}
+
+.event-text {
+    grid-column: 1;
+    grid-row: 1/3;
+    color: #21201F;
+    font-family: 'YS Text', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%; /* 28.8px */
+}
+
+.event-photo1 {
+    position: relative;
+    grid-column: 2;
+    grid-row: 2/4;
+}
+
+.event-photo2 {
+    position: relative;
+    grid-column: 1;
+    grid-row: 3/4;
+}
+
+.event-photo3 {
+    position: relative;
+    grid-column: 2;
+    grid-row: 4/6;
+}
+
+.event-photo4 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.photo-events {
+    width: 456px;
+}

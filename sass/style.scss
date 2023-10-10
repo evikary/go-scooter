@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'YS Text';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'YS Text';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'YS Text';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @import "abstract/constants";
+  @import "base/base";
+  @import "layout/wrapper";
+  @import "layout/bonuses";
+  @import "layout/events";
+  @import "components/header";
+  @import "components/bonuses";
+  @import "components/events";
+  @import "components/in-plus";
+  @import "components/footer";
+  
+  
+    .button {
+      margin-top: 44px;
+      padding: 24px 48px;
+      font-family: 'YS Text', sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 22px; /* 91.667% */
+      color: #21201F;
+      border-radius: 36px;
+      border: none;
+      background: #FFDE40;
+      box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+      cursor: pointer;
+    }
+
+
+    .in-plus__description {
+        color: #21201F;
+        font-family: 'YS Text', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 120%; /* 28.8px */
+    }
+
+    /* .img1-in-plus {
+      position: absolute;
+      top: -240px;
+      right: 66px;
+    } */
+
+    /* .in-plus-box2 {
+      margin-left: 476px;
+    } */
+
+    /* .img2-in-plus {
+      position: absolute;
+      left: -250px;
+    } */
+
+    /* .subscription-terms {
+      margin-top: 111px;
+      margin-bottom: 128px;
+    } */
+
+    .footer__subscription {
+      color: #C5C5C5;
+      font-family: 'YS Text', sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 15.6px */
+    }
+
+    .subscription_link {
+      text-decoration: none;
+      color: #C5C5C5;
+      font-family: 'YS Text', sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      text-decoration-line: underline;
+    }
+  
+  
+  

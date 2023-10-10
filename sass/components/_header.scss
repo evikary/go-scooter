@@ -1,0 +1,66 @@
+.header {
+    position: relative;
+    background-image: url(../../assets/header-img/bg.png);
+    background-size: cover;
+}
+
+.header__wrapper {
+    padding: 124px 0;
+}
+
+.header__content {
+    position: relative;
+    margin-left: 30px;
+    margin-top: 44px;
+    z-index: 1;
+}
+
+.header__scooter-img {
+    position: absolute;
+    left: 144px;
+    top: -116px;
+}
+
+.header__logo {
+    display: inline-block;
+    width: 176px;
+    height: 50px;
+    margin-bottom: 72px;
+    background-image: url(../../assets/header-img/yandex_go.svg)
+}
+
+.header__description {
+    margin-top: 44px;
+    color: $color-text;
+    font-family: 'YS Text', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%; /* 31.2px */
+  }
+
+  .header__toggle_old {
+    padding: 11px 12px 11px 57px;
+    margin-left: -45px;
+    color: #808080;
+    font-family: 'YS Text', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%; /* 19.2px */
+    text-decoration: line-through;
+    border-radius: 500px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0.63) 100%), radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
+  }
+
+  .header__toggle_new {
+    position: relative;
+    z-index: 1;
+    top: 2px;
+    padding: 6px 12px;
+    border-radius: 500px;
+    background: radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
+    color: #2E2C21;
+    font-family: 'YS Text', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 19px; /* 28.8px */
+  }

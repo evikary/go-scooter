@@ -1,0 +1,34 @@
+.in-plus {
+    margin-top: 104px;
+    background: $color-light;
+}
+
+.in-plus__left-content {
+    position: relative;
+    margin-bottom: 128px;
+}
+
+.in-plus__description {
+    color: $color-text;
+    font-family: 'YS Text', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%; /* 28.8px */
+}
+
+.img1-in-plus {
+    position: absolute;
+    top: -234px;
+    left: 272px;
+}
+
+.in-plus__right-content {
+    position: relative;
+    margin-left: 505px;
+}
+
+.img2-in-plus {
+    position: absolute;
+    left: -750px;
+    top: -136px;
+}

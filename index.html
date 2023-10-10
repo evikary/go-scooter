@@ -3,90 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="sass/style.css">
     <title>go-scooter-pass</title>
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper">
-            <div class="header__content">
-                <h1>Вступайте <br>в клуб <br>Самокатов</h1>
-                <p class="header__description">Купите абонемент, чтобы стать <br>частью клуба в новом сезоне-2024. <br>8 месяцев за </p>
-                <div class="header__toggles">
-                    <div class="toggle toggle_new">499 ₽</div>
-                    <div class="toggle toggle_old">3190 ₽</div>
-                    <button class="button">Стать частью клуба</button>
+    <div class="all-wrapper">
+        <header class="header">
+            <!-- <img class="header__scooter-img" src="./assets/header-img/scooter.png" alt=""> -->
+            <div class="wrapper header__wrapper">
+                <div class="header__content">
+                    <img class="header__scooter-img" src="./assets/header-img/scooter.png" alt="">
+                    <span class="header__logo"></span>
+                    <h1>Вступайте <br>в клуб <br>Самокатов</h1>
+                    <p class="header__description">Купите абонемент, чтобы стать <br>частью клуба в новом сезоне-2024. <br>8 месяцев за <span class="header__toggle_new">499 ₽</span><span class="header__toggle_old">3190 ₽</span></p>
+                        <button class="button">Стать частью клуба</button>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="bonuses">
-        <div class="wrapper">
-            <h2>Вот что даёт участие <br>в клубе</h2>
-            <div class="layout-2-column">
-                <div class="bonus">
-                    <div class="bonus-icon"><!-- <img class="bonus-icon" src="./assets/bonus1.png"> --></div>
-                    <p class="bonus-description">0 ₽ за старт в каждой поездке</p>
+        </header>
+        <section class="bonuses">
+            <div class="wrapper">
+                <h2>Вот что даёт участие <br>в клубе</h2>
+                <div class="layout-2-column">
+                    <div class="bonus">
+                        <img class="bonus-icon" src="./assets/bonuses-img/bonus1.png" alt="">
+                        <p class="bonus-description">0 ₽ за старт в каждой поездке</p>
+                    </div>
+                    <div class="bonus">
+                        <img class="bonus-icon" src="./assets/bonuses-img/bonus2.png" alt="">
+                        <p class="bonus-description">Катаетесь с друзьями? <br>Бронируйте до трёх самокатов <br>с аккаунта с абонементом — <br>так у всех будет бесплатный старт</p>
+                    </div>
                 </div>
-                <div class="bonus">
-                    <div class="bonus-icon"><!-- <img class="icon-bonus" src="./assets/bonus2.png"> --></div>
-                    <p class="bonus-description">Катаетесь с друзьями? <br>Бронируйте до трёх самокатов <br>с аккаунта с абонементом — <br>так у всех будет бесплатный старт</p>
-                </div>
-                <div class="bonus">
-                    <div class="bonus-icon"><!-- <img class="icon-bonus" src="./assets/bonus3.png"> --></div>
-                    <p class="bonus-description">Бесплатная пауза 15 минут <br>в поездке — например, чтобы <br>зайти за кофе или передохнуть</p>
-                </div>
-                <div class="bonus">
-                    <div class="bonus-icon"><!-- <img class="icon-bonus" src="./assets/bonus4.png"> --></div>
-                    <p class="bonus-description">Если самокат недостаточно <br>заряжен или с ним неудобно <br>переходить дорогу, замените <br>по пути на другой — это бесплатно</p>
+                <div class="layout-2-column">
+                    <div class="bonus">
+                        <img class="bonus-icon" src="./assets/bonuses-img/bonus3.png" alt="">
+                        <p class="bonus-description">Бесплатная пауза 15 минут <br>в поездке — например, чтобы <br>зайти за кофе или передохнуть</p>
+                    </div>
+                    <div class="bonus">
+                        <img class="bonus-icon" src="./assets/bonuses-img/bonus4.png" alt="">
+                        <p class="bonus-description">Если самокат недостаточно <br>заряжен или с ним неудобно <br>переходить дорогу, замените <br>по пути на другой — это бесплатно</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="events">
-        <div class="wrapper">
-            <h3>Эксклюзивный доступ <br>к событиям Самокатов</h3>
-            <div class="grid-layout-2-column">
-                <div class="event-text">С абонементом — у вас доступ <br>к специальным мероприятиям, <br>скидки и классный мерч. В 2023 году <br>мы танцевали на Даче Плюс <br>с Антохой MC, катались на самокатах <br>с Сергеем Мезенцевым и слушали хор <br>Attaque de Panique</div>
-                <div class="event-photo1">
-                    <!-- <img class="icon-events1" src="./assets/icon-events1.png" alt="icon-event"> -->
-                    <img class="photo-events" src="./assets/event1.png">
+        </section>
+        <section class="events">
+            <div class="wrapper">
+                <h3>Эксклюзивный доступ <br>к событиям Самокатов</h3>
+                <div class="grid-layout-2-column">
+                    <div class="event-text">С абонементом — у вас доступ <br>к специальным мероприятиям, <br>скидки и классный мерч. В 2023 году <br>мы танцевали на Даче Плюс <br>с Антохой MC, катались на самокатах <br>с Сергеем Мезенцевым и слушали хор <br>Attaque de Panique</div>
+                    <div class="event-photo1">
+                        <img class="icon-events1" src="./assets/events-img/icon-events1.png" alt="icon-event">
+                        <img class="photo-events" src="./assets/events-img/event1.png" alt="">
+                    </div>
+                    <div class="event-photo2">
+                        <img class="icon-events2" src="./assets/events-img/icon-events2.png" alt="icon-event">
+                        <img class="photo-events" src="./assets/events-img/event2.png" alt="">
+                    </div>
+                    <div class="event-photo3">
+                        <img class="icon-events3" src="./assets/events-img/icon-events3.png" alt="icon-event">
+                        <img class="photo-events" src="./assets/events-img/event3.png" alt="">
+                    </div>
+                    <div class="event-photo4">
+                        <img class="photo-events" src="./assets/events-img/event4.png" alt="">
+                    </div>
+                    <!-- <div class="item6"></div> -->
                 </div>
-                <div class="event-photo2">
-                    <!-- <img class="icon-events2" src="./assets/icon-events2.png" alt="icon-event"> -->
-                    <img class="photo-events" src="./assets/event2.png">
-                </div>
-                <div class="event-photo3">
-                    <!-- <img class="icon-events3" src="./assets/icon-events3.png" alt="icon-event"> -->
-                    <img class="photo-events" src="./assets/event3.png">
-                </div>
-                <div class="event-photo4">
-                    <img class="photo-events" src="./assets/event4.png">
-                </div>
-                <!-- <div class="item6"></div> -->
             </div>
-        </div>
-    </section>
-    <section class="in-plus">
-        <div class="wrapper">
-            <div class="in-plus__left-content">
-                <h3>Купить <br>абонемент <br>и вступить <br>в клуб смогут <br>те, кто в Плюсе</h3>
-                <p class="in-plus__description">За каждую поездку на самокатах <br>такие пользователи получают <br>кешбэк баллами. Баллы можно <br>тратить на поездки на самокатах <br>и такси с Яндекс Go, покупки <br>и заказы в других сервисах Яндекса</p>
-                <!-- <img class="img1-in-plus" src="./assets/img1-in-plus.png"> -->
-                <!-- <img class="img2-in-plus" src="./assets/img2-in-plus.png"> -->
+        </section>
+        <section class="in-plus">
+            <div class="wrapper">
+                <div class="in-plus__left-content">
+                    <h3>Купить <br>абонемент <br>и вступить <br>в клуб смогут <br>те, кто в Плюсе</h3>
+                    <p class="in-plus__description">За каждую поездку на самокатах <br>такие пользователи получают <br>кешбэк баллами. Баллы можно <br>тратить на поездки на самокатах <br>и такси с Яндекс Go, покупки <br>и заказы в других сервисах Яндекса</p>
+                    <img class="img1-in-plus" src="./assets/in-plus-img/img1-in-plus.png">
+                </div>
+                <div class="in-plus__right-content">
+                    <img class="img2-in-plus" src="./assets/in-plus-img/img2-in-plus.png">
+                    <h3>80 % наших <br>пользователей <br>уже в клубе <br>и экономят <br>на поездках</h3>
+                    <p class="in-plus__description">Присоединяйтесь — опция начнёт <br>действовать в начале сезона–2024. <br>Об открытии сезона предупредим <br>заранее, чтобы вы были готовы</p>
+                    <button class="button">Хочу абонемент</button>
+                </div>
             </div>
-            <div class="in-plus__right-content">
-                <h3>80 % наших <br>пользователей <br>уже в клубе <br>и экономят <br>на поездках</h3>
-                <p class="in-plus__description">Присоединяйтесь — опция начнёт <br>действовать в начале сезона–2024. <br>Об открытии сезона предупредим <br>заранее, чтобы вы были готовы</p>
-                <button class="button">Хочу абонемент</button>
+        </section>
+        <footer class="footer">
+            <div class="wrapper">
+                <p class="footer__subscription">Доп. опция «Абонемент на самокаты» на 8 месяцев (240 дней) активируется автоматически с момента старта сезона 2024 г. самокатов Яндекс Go, <br>далее предусмотрено автопродление доп.опции за 399 руб./мес. Сертификат на доп.опцию «Абонемент на самокаты» на 8 месяцев оформляется <br>на условиях документа <a class="subscription_link" href="https://yandex.ru/legal/scooters_seasonpass/" target="_blank">yandex.ru/legal/scooters_seasonpass</a>. Доп.опция доступна пользователям с активной подпиской (условия подписки: <br><a class="subscription_link" href="https://yandex.ru/legal/yandex_plus_conditions/" target="_blank">yandex.ru/legal/yandex_plus_conditions</a>), есть ограничения, подробнее: <a class="subscription_link" href="https://yandex.ru/legal/yandex_plus_opzii_list/" target="_blank">yandex.ru/legal/yandex_plus_opzii_list</a>. В случае отсутствия у пользователя <br>активной подписки на дату активации доп.опции, пользователю предоставляется 7 дней подписки Яндекс Плюс бесплатно, далее автопродление — <br>299 руб./мес. Электросамокаты Яндекс Go — сервис аренды электросамокатов на условиях: <a class="subscription_link" href="https://yandex.ru/legal/samokaty/" target="_blank">clck.ru/gwDGn</a>. 0+</p>
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="wrapper">
-            <p class="footer__subscription">Доп. опция «Абонемент на самокаты» на 8 месяцев (240 дней) активируется автоматически с момента старта сезона 2024 г. самокатов Яндекс Go, <br>далее предусмотрено автопродление доп.опции за 399 руб./мес. Сертификат на доп.опцию «Абонемент на самокаты» на 8 месяцев оформляется <br>на условиях документа <a class="subscription_link" href="https://yandex.ru/legal/scooters_seasonpass/" target="_blank">yandex.ru/legal/scooters_seasonpass</a>. Доп.опция доступна пользователям с активной подпиской (условия подписки: <br><a class="subscription_link" href="https://yandex.ru/legal/yandex_plus_conditions/" target="_blank">yandex.ru/legal/yandex_plus_conditions</a>), есть ограничения, подробнее: <a class="subscription_link" href="https://yandex.ru/legal/yandex_plus_opzii_list/" target="_blank">yandex.ru/legal/yandex_plus_opzii_list</a>. В случае отсутствия у пользователя <br>активной подписки на дату активации доп.опции, пользователю предоставляется 7 дней подписки Яндекс Плюс бесплатно, далее автопродление — <br>299 руб./мес. Электросамокаты Яндекс Go — сервис аренды электросамокатов на условиях: <a class="subscription_link" href="https://yandex.ru/legal/samokaty/" target="_blank">clck.ru/gwDGn</a>. 0+</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
 
     <!-- <div class="wrapper"> -->
