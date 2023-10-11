@@ -20,3 +20,13 @@
     top: 130px;
     left: 103px;
 }
+
+.photo-events {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.photo-events:hover {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}

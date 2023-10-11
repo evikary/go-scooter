@@ -53,6 +53,26 @@ h3 {
   letter-spacing: -0.96px;
 }
 
+.button {
+  margin-top: 44px;
+  padding: 24px 48px;
+  font-family: "YS Text", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 22px; /* 91.667% */
+  color: #21201F;
+  border-radius: 36px;
+  border: none;
+  background: #FFDE40;
+  box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: rgb(255, 142, 255);
+}
+
 .wrapper {
   max-width: 980px;
   margin: auto;
@@ -134,14 +154,26 @@ h3 {
 .header__content {
   position: relative;
   margin-left: 30px;
-  margin-top: 44px;
   z-index: 1;
 }
 
 .header__scooter-img {
   position: absolute;
-  left: 144px;
-  top: -116px;
+  left: 271px;
+  top: -68px;
+}
+
+.header__shadow {
+  position: absolute;
+  left: 240px;
+  top: -10px;
+  width: 657.8px;
+  height: 401.903px;
+  transform: rotate(-140.03deg);
+  border-radius: 657.8px;
+  opacity: 0.5;
+  background: #8241EF;
+  filter: blur(100px);
 }
 
 .header__logo {
@@ -195,6 +227,14 @@ h3 {
 .bonus-icon {
   width: 94px;
   height: 83px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.bonus-icon:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .bonus-description {
@@ -226,6 +266,16 @@ h3 {
   position: absolute;
   top: 130px;
   left: 103px;
+}
+
+.photo-events {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.photo-events:hover {
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
 }
 
 .in-plus {
@@ -268,45 +318,6 @@ h3 {
   margin-bottom: 128px;
 }
 
-.button {
-  margin-top: 44px;
-  padding: 24px 48px;
-  font-family: "YS Text", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 22px; /* 91.667% */
-  color: #21201F;
-  border-radius: 36px;
-  border: none;
-  background: #FFDE40;
-  box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
-  cursor: pointer;
-}
-
-.in-plus__description {
-  color: #21201F;
-  font-family: "YS Text", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 120%; /* 28.8px */
-}
-
-/* .img1-in-plus {
-  position: absolute;
-  top: -240px;
-  right: 66px;
-} */
-/* .in-plus-box2 {
-  margin-left: 476px;
-} */
-/* .img2-in-plus {
-  position: absolute;
-  left: -250px;
-} */
-/* .subscription-terms {
-  margin-top: 111px;
-  margin-bottom: 128px;
-} */
 .footer__subscription {
   color: #C5C5C5;
   font-family: "YS Text", sans-serif;
@@ -325,6 +336,11 @@ h3 {
   font-weight: 400;
   line-height: 120%;
   text-decoration-line: underline;
+  transition: all 0.3s;
+}
+
+.subscription_link:hover {
+  color: #21201F;
 }
 
 /*# sourceMappingURL=style.css.map */

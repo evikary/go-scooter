@@ -11,14 +11,26 @@
 .header__content {
     position: relative;
     margin-left: 30px;
-    margin-top: 44px;
     z-index: 1;
 }
 
 .header__scooter-img {
     position: absolute;
-    left: 144px;
-    top: -116px;
+    left: 271px;
+    top: -68px;
+}
+
+.header__shadow {
+    position: absolute;
+    left: 240px;
+    top: -10px;
+    width: 657.8px;
+    height: 401.903px;
+    transform: rotate(-140.03deg);
+    border-radius: 657.8px;
+    opacity: 0.5;
+    background: #8241EF;
+    filter: blur(100px);
 }
 
 .header__logo {
