@@ -44,20 +44,16 @@
 .header__description {
     margin-top: 44px;
     color: $color-text;
-    font-family: 'YS Text', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 130%; /* 31.2px */
+    @extend %font-family;
+    @include fontText(24px, 500, 130%);
   }
 
   .header__toggle_old {
     padding: 11px 12px 11px 57px;
     margin-left: -45px;
-    color: #808080;
-    font-family: 'YS Text', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 120%; /* 19.2px */
+    color: $color-grey;
+    @extend %font-family;
+    @include fontText(16px, 500, 120%);
     text-decoration: line-through;
     border-radius: 500px;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0.63) 100%), radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
@@ -68,11 +64,9 @@
     z-index: 1;
     top: 2px;
     padding: 6px 12px;
+    @extend %font-family;
+    @include fontText(24px, 500, 19px);
     border-radius: 500px;
     background: radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
-    color: #2E2C21;
-    font-family: 'YS Text', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 19px; /* 28.8px */
+    color: $color-text;
   }

@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'YS Text';
+  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YS Text';
+  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YS Text';
+  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,30 +28,20 @@
 h1 {
     position: relative;
     color: $color-text;
-    font-family: 'YS Text', sans-serif;
-    font-size: 72px;
-    line-height: 100%; /* 72px */
-    letter-spacing: -1.44px;
+    @extend %font-family;
+    @include fontTitle(72px, normal, 900, 100%, -1.44px)
   }
 
   h2 {
     margin-bottom: 48px;
     color: $color-text;
-    font-family: 'YS Text', sans-serif;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 100%; /* 56px */
-    letter-spacing: -1.12px;
+    @extend %font-family;
+    @include fontTitle(56px, normal, 900, 100%, -1.12px)
 }
 
 h3 {
     margin-bottom: 48px;
     color: $color-text;
-    font-family: 'YS Text';
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 100%; 
-    letter-spacing: -0.96px;
+    @extend %font-family;
+    @include fontTitle(48px, normal, 900, 100%, -0.96px)
   }

@@ -16,9 +16,7 @@
 }
 
 .bonus-description {
-    color: #21201F;
-    font-family: 'YS Text', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 120%; /* 28.8px */
+    color: $color-text;
+    @extend %font-family;
+    @include fontText(24px, 500, 120%);
 }

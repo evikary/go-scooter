@@ -1,3 +1,7 @@
+.subscription_link, .footer__subscription, .in-plus__description, .bonus-description, .header__toggle_new, .header__toggle_old, .header__description, .event-text, .button, h3, h2, h1 {
+  font-family: "YS Text", sans-serif;
+}
+
 @font-face {
   font-family: "YS Text";
   src: url("https://yastatic.net/s3/home/fonts/ys/4/text-black.woff") format("woff");
@@ -25,27 +29,26 @@
 h1 {
   position: relative;
   color: #21201F;
-  font-family: "YS Text", sans-serif;
   font-size: 72px;
-  line-height: 100%; /* 72px */
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
   letter-spacing: -1.44px;
 }
 
 h2 {
   margin-bottom: 48px;
   color: #21201F;
-  font-family: "YS Text", sans-serif;
   font-size: 56px;
   font-style: normal;
   font-weight: 900;
-  line-height: 100%; /* 56px */
+  line-height: 100%;
   letter-spacing: -1.12px;
 }
 
 h3 {
   margin-bottom: 48px;
   color: #21201F;
-  font-family: "YS Text";
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -56,10 +59,9 @@ h3 {
 .button {
   margin-top: 44px;
   padding: 24px 48px;
-  font-family: "YS Text", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 22px; /* 91.667% */
+  line-height: 22px;
   color: #21201F;
   border-radius: 36px;
   border: none;
@@ -108,10 +110,9 @@ h3 {
   grid-column: 1;
   grid-row: 1/3;
   color: #21201F;
-  font-family: "YS Text", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 120%; /* 28.8px */
+  line-height: 120%;
 }
 
 .event-photo1 {
@@ -187,20 +188,18 @@ h3 {
 .header__description {
   margin-top: 44px;
   color: #21201F;
-  font-family: "YS Text", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 130%; /* 31.2px */
+  line-height: 130%;
 }
 
 .header__toggle_old {
   padding: 11px 12px 11px 57px;
   margin-left: -45px;
   color: #808080;
-  font-family: "YS Text", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 120%; /* 19.2px */
+  line-height: 120%;
   text-decoration: line-through;
   border-radius: 500px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0.63) 100%), radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
@@ -211,13 +210,12 @@ h3 {
   z-index: 1;
   top: 2px;
   padding: 6px 12px;
-  border-radius: 500px;
-  background: radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
-  color: #2E2C21;
-  font-family: "YS Text", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 19px; /* 28.8px */
+  line-height: 19px;
+  border-radius: 500px;
+  background: radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
+  color: #21201F;
 }
 
 .bonuses {
@@ -239,10 +237,9 @@ h3 {
 
 .bonus-description {
   color: #21201F;
-  font-family: "YS Text", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 120%; /* 28.8px */
+  line-height: 120%;
 }
 
 .events {
@@ -290,10 +287,9 @@ h3 {
 
 .in-plus__description {
   color: #21201F;
-  font-family: "YS Text", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 120%; /* 28.8px */
+  line-height: 120%;
 }
 
 .img1-in-plus {
@@ -316,25 +312,24 @@ h3 {
 .footer {
   margin-top: 111px;
   margin-bottom: 128px;
+  background: #FFF;
 }
 
 .footer__subscription {
   color: #C5C5C5;
-  font-family: "YS Text", sans-serif;
-  font-size: 13px;
   font-style: normal;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 120%; /* 15.6px */
+  line-height: 120%;
 }
 
 .subscription_link {
   text-decoration: none;
   color: #C5C5C5;
-  font-family: "YS Text", sans-serif;
   font-size: 13px;
-  font-style: normal;
   font-weight: 400;
   line-height: 120%;
+  font-style: normal;
   text-decoration-line: underline;
   transition: all 0.3s;
 }

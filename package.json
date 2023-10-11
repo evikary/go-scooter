@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/evikary/go-scooter/issues"
   },
-  "homepage": "https://github.com/evikary/go-scooter#readme"
+  "homepage": "https://github.com/evikary/go-scooter#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
 }

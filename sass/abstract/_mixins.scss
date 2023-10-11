@@ -1,0 +1,13 @@
+@mixin fontTitle ($size, $style, $weight, $height, $spacing) {
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+};
+
+@mixin fontText ($size, $weight, $height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+};

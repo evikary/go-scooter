@@ -10,10 +10,8 @@
 
 .in-plus__description {
     color: $color-text;
-    font-family: 'YS Text', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 120%; /* 28.8px */
+    @extend %font-family;
+    @include fontText(24px, 500, 120%)
 }
 
 .img1-in-plus {
