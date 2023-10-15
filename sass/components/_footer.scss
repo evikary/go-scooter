@@ -2,14 +2,17 @@
     margin-top: 111px;
     margin-bottom: 128px;
     background: $color-light;
+    &__subscription {
+      color: $color-aditional;
+      @extend %font-family;
+      font-style: normal;
+      @include fontText(13px, 400, 120%)
+    }
+    @media (max-width: 1239px) {
+      padding-left: 82px;
+      margin-bottom: 72px;
+   }
 }
-
-.footer__subscription {
-    color: $color-aditional;
-    @extend %font-family;
-    font-style: normal;
-    @include fontText(13px, 400, 120%)
-  }
 
   .subscription_link {
     text-decoration: none;
@@ -19,8 +22,7 @@
     font-style: normal;
     text-decoration-line: underline;
     transition: all .3s;
-  }
-
-  .subscription_link:hover {
+    &:hover {
     color: $color-text;
+    }
   }

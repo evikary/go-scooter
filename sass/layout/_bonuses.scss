@@ -1,6 +1,10 @@
 .layout-2-column {
     display: flex;
     column-gap: 112px;
+    @media (max-width: 1239px) {
+        flex-direction: column;
+        column-gap: 0;
+    }
 }
 
 .bonus {
@@ -9,4 +13,8 @@
     flex-direction: column;
     row-gap: 16px;
     margin-bottom: 61px;
+    @media (max-width: 1239px) {
+        flex-direction: row;
+        column-gap: 32px;
+    }
 }

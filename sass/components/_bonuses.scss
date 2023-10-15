@@ -1,5 +1,8 @@
 .bonuses {
     background: $color-light;
+    @media (max-width: 1239px) {
+        padding-left: 82px;
+     }
 }
 
 .bonus-icon {
@@ -7,12 +10,12 @@
     height: 83px;
     -webkit-transition: all .8s ease;
     transition: all .8s ease;
-}
 
-.bonus-icon:hover {
-    border-radius: 50%;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    &:hover {
+        border-radius: 50%;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 .bonus-description {

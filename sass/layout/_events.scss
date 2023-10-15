@@ -4,6 +4,13 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 51px 202px 262px 202px 262px 202px;
     gap: 8px;
+    @media (max-width: 1239px) {
+        display: flex;
+        width: 100%;
+        padding: 0 32px;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .event-text {
@@ -11,32 +18,50 @@
     grid-row: 1/3;
     color: #21201F;
     @extend %font-family;
-    @include fontText(24px, 500, 120%)
+    @include fontText(24px, 500, 120%);
+    @media (max-width: 1239px) {
+        padding: 0 0 40px 0;
+    }
 }
 
 .event-photo1 {
     position: relative;
     grid-column: 2;
     grid-row: 2/4;
+    @media (max-width: 1239px) {
+        position: static;
+    }
 }
 
 .event-photo2 {
     position: relative;
     grid-column: 1;
     grid-row: 3/4;
+    @media (max-width: 1239px) {
+        position: static;
+    }
 }
 
 .event-photo3 {
     position: relative;
     grid-column: 2;
     grid-row: 4/6;
+    @media (max-width: 1239px) {
+        position: static;
+    }
 }
 
 .event-photo4 {
     grid-column: 1;
     grid-row: 5;
+    @media (max-width: 1239px) {
+        position: static;
+    }
 }
 
 .photo-events {
     width: 456px;
+    @media (max-width: 1239px) {
+        border-radius: 30px;
+    }
 }

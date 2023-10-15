@@ -1,32 +1,45 @@
 .events {
     margin-top: 67px;
     background: $color-light;
+    @media (max-width: 1239px) {
+        margin-top: 42px;
+        padding-left: 82px;
+    }
 }
 
 .icon-events1 {
     position: absolute;
     top: -150px;
     left: 245px;
+    @media (max-width: 1239px) {
+        display: none;
+    }
 }
 
 .icon-events2 {
     position: absolute;
     left: -242px;
     top: -136px;
+    @media (max-width: 1239px) {
+        display: none;
+    }
 }
 
 .icon-events3 {
     position: absolute;
     top: 130px;
     left: 103px;
+    @media (max-width: 1239px) {
+        display: none;
+    }
 }
 
 .photo-events {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
-}
-
-.photo-events:hover {
-    -webkit-transform: rotate(15deg);
-    transform: rotate(15deg);
+    &:hover {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+    
 }

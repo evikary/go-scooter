@@ -6,18 +6,32 @@
 
 .header__wrapper {
     padding: 124px 0;
+    @media (max-width: 1239px) {
+        padding: 32px 0 38px;
+    }
 }
 
 .header__content {
     position: relative;
     margin-left: 30px;
     z-index: 1;
+    @media (max-width: 1239px) {
+        margin-left: 0;
+        padding-left: 82px;
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .header__scooter-img {
     position: absolute;
     left: 271px;
     top: -68px;
+    @media (max-width: 1239px) {
+        position: static;
+        width: 100%;
+    }
 }
 
 .header__shadow {
@@ -31,6 +45,9 @@
     opacity: 0.5;
     background: #8241EF;
     filter: blur(100px);
+    @media (max-width: 1239px) {
+        display: none;
+    }
 }
 
 .header__logo {
@@ -38,7 +55,10 @@
     width: 176px;
     height: 50px;
     margin-bottom: 72px;
-    background-image: url(../../assets/header-img/yandex_go.svg)
+    background-image: url(../../assets/header-img/yandex_go.svg);
+    @media (max-width: 1239px) {
+        margin-bottom: 32px;
+    }
 }
 
 .header__description {

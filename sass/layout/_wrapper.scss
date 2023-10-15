@@ -1,9 +1,16 @@
+.all-wrapper {
+    max-width: $all-wrapper-desctop;
+    margin: auto;
+    @media (max-width: 1239px) {
+        width: $all-wrapper-tablet;
+    }
+}
+
 .wrapper {
     max-width: $content-width;
     margin: auto;
+    @media (max-width: 1239px) {
+        width: $content-tablet-width;
+    }
 }
 
-.all-wrapper {
-    max-width: 1440px;
-    margin: auto;
-}

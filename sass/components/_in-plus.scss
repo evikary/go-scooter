@@ -1,11 +1,22 @@
 .in-plus {
     margin-top: 104px;
     background: $color-light;
+    @media (max-width: 1239px) {
+        margin-top: 82px;
+    }
 }
 
 .in-plus__left-content {
     position: relative;
     margin-bottom: 128px;
+    @media (max-width: 1239px) {
+        margin-bottom: 40px;
+       position: static;
+       position: static;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
 }
 
 .in-plus__description {
@@ -23,10 +34,27 @@
 .in-plus__right-content {
     position: relative;
     margin-left: 505px;
+    @media (max-width: 1239px) {
+        margin-left: 0;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+}
+
+.in-plus__title {
+    @media (max-width: 1239px) {
+        margin-top: -80px;
+     }
 }
 
 .img2-in-plus {
     position: absolute;
     left: -750px;
     top: -136px;
+    @media (max-width: 1239px) {
+        position: static;
+        width: 100%;
+     }
 }
