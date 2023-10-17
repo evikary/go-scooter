@@ -1,28 +1,39 @@
 .in-plus {
     margin-top: 104px;
     background: $color-light;
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         margin-top: 82px;
+    }
+    @media (max-width: $wrapper-mobile) {
+        margin-top: 72px;
     }
 }
 
 .in-plus__left-content {
     position: relative;
     margin-bottom: 128px;
-    @media (max-width: 1239px) {
-        margin-bottom: 40px;
+    @media (max-width: $wrapper-pad) {
+       margin-bottom: 40px;
        position: static;
        position: static;
        display: flex;
        flex-direction: column;
        align-items: center;
     }
+    @media (max-width: $wrapper-mobile) {
+        display: block;
+        margin-bottom: 25px;
+    }
 }
 
 .in-plus__description {
     color: $color-text;
     @extend %font-family;
-    @include fontText(24px, 500, 120%)
+    @include fontText(24px, 500, 120%);
+    @media (max-width: $wrapper-mobile) {
+        @include fontText(16px, 500, 120%);
+        margin-left: 17px;
+    }
 }
 
 .img1-in-plus {
@@ -34,26 +45,32 @@
 .in-plus__right-content {
     position: relative;
     margin-left: 505px;
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         margin-left: 0;
         position: static;
         display: flex;
         flex-direction: column;
         align-items: center;
      }
+    @media (max-width: $wrapper-mobile) {
+        display: block;
+    }
 }
 
 .in-plus__title {
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         margin-top: -80px;
-     }
+    }
+     @media (max-width: $wrapper-mobile) {
+        margin-top: -50px;
+    }
 }
 
 .img2-in-plus {
     position: absolute;
     left: -750px;
     top: -136px;
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         position: static;
         width: 100%;
      }

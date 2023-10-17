@@ -1,8 +1,11 @@
 .bonuses {
     background: $color-light;
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         padding-left: 82px;
      }
+    @media (max-width: $wrapper-mobile) {
+        padding-left: 17px;
+    }
 }
 
 .bonus-icon {
@@ -10,6 +13,9 @@
     height: 83px;
     -webkit-transition: all .8s ease;
     transition: all .8s ease;
+    @media (max-width: $wrapper-mobile) {
+        width: 83px;
+    }
 
     &:hover {
         border-radius: 50%;
@@ -22,4 +28,7 @@
     color: $color-text;
     @extend %font-family;
     @include fontText(24px, 500, 120%);
+    @media (max-width: $wrapper-mobile) {
+        @include fontText(16px, 500, 120%);
+    }
 }

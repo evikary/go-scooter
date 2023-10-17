@@ -15,18 +15,28 @@
       background: rgb(255, 142, 255);
     }
 
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
       align-self: center;
       width: calc(100% - 300px);
   }
+    @media (max-width: $wrapper-mobile) {
+      margin-top: 35px;
+      padding: 17px 0;
+      width: calc(100% - 33px);
+      @include fontText(18px, 500, 22px);
+    }
    
   &_scrolled {
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
       position: fixed;
       max-width: 50%;
       animation-name: fadeindown;
-      animation-duration: 1s;
+      animation-duration: 1.5s;
       animation-fill-mode: forwards;
+    }
+    @media (max-width: $wrapper-mobile) {
+      max-width: 45%;
+      left: 27%;
     }
   }
   }

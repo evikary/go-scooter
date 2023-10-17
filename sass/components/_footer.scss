@@ -6,12 +6,19 @@
       color: $color-aditional;
       @extend %font-family;
       font-style: normal;
-      @include fontText(13px, 400, 120%)
+      @include fontText(13px, 400, 120%);
+      @media (max-width: $wrapper-mobile) {
+        @include fontText(10px, 400, 120%);
+      }
     }
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
       padding-left: 82px;
-      margin-bottom: 72px;
-   }
+      padding-bottom: 72px;
+    }
+    @media (max-width: $wrapper-mobile) {
+        padding: 72px 0 72px 17px;
+        margin: 0;
+    }
 }
 
   .subscription_link {
@@ -25,4 +32,7 @@
     &:hover {
     color: $color-text;
     }
+    @media (max-width: $wrapper-mobile) {
+      @include fontText(10px, 400, 120%);
+    } 
   }

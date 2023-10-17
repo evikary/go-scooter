@@ -1,7 +1,7 @@
 .layout-2-column {
     display: flex;
     column-gap: 112px;
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         flex-direction: column;
         column-gap: 0;
     }
@@ -13,8 +13,13 @@
     flex-direction: column;
     row-gap: 16px;
     margin-bottom: 61px;
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         flex-direction: row;
         column-gap: 32px;
+    }
+    @media (max-width: $wrapper-mobile) {
+        margin-bottom: 24px;
+        column-gap: 16px;
+        align-items: center;
     }
 }

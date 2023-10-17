@@ -29,19 +29,32 @@ h1 {
     position: relative;
     color: $color-text;
     @extend %font-family;
-    @include fontTitle(72px, normal, 900, 100%, -1.44px)
+    @include fontTitle(72px, normal, 900, 100%, -1.44px);
+    @media (max-width: 768px) {
+      position: static;
+      @include fontTitle(36px, normal, 900, 100%, 0.72px);
+    }
   }
 
   h2 {
     margin-bottom: 48px;
     color: $color-text;
     @extend %font-family;
-    @include fontTitle(56px, normal, 900, 100%, -1.12px)
+    @include fontTitle(56px, normal, 900, 100%, -1.12px);
+    @media (max-width: $wrapper-mobile) {
+      margin-bottom: 32px;
+      @include fontTitle(32px, normal, 900, 100%, -0.64px);
+    }
 }
 
 h3 {
     margin-bottom: 48px;
     color: $color-text;
     @extend %font-family;
-    @include fontTitle(48px, normal, 900, 100%, -0.96px)
+    @include fontTitle(48px, normal, 900, 100%, -0.96px);
+    @media (max-width: $wrapper-mobile) {
+      margin-left: 17px;
+      @include fontTitle(32px, normal, 900, 100%, -0.64px);
+      margin-bottom: 32px;
+    }
   }

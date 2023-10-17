@@ -1,13 +1,16 @@
 .header {
     position: relative;
-    background-image: url(../../assets/header-img/bg.png);
+    background-image: url(../assets/header-img/bg.png);
     background-size: cover;
 }
 
 .header__wrapper {
     padding: 124px 0;
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         padding: 32px 0 38px;
+    }
+    @media (max-width: $wrapper-mobile) {
+        padding: 32px 0 39px;
     }
 }
 
@@ -15,12 +18,15 @@
     position: relative;
     margin-left: 30px;
     z-index: 1;
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         margin-left: 0;
         padding-left: 82px;
         position: static;
         display: flex;
         flex-direction: column;
+    }
+    @media (max-width: $wrapper-mobile) {
+        padding-left: 17px;
     }
 }
 
@@ -28,7 +34,7 @@
     position: absolute;
     left: 271px;
     top: -68px;
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         position: static;
         width: 100%;
     }
@@ -45,7 +51,7 @@
     opacity: 0.5;
     background: #8241EF;
     filter: blur(100px);
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         display: none;
     }
 }
@@ -55,9 +61,14 @@
     width: 176px;
     height: 50px;
     margin-bottom: 72px;
-    background-image: url(../../assets/header-img/yandex_go.svg);
-    @media (max-width: 1239px) {
+    background-image: url(../assets/header-img/yandex_go.svg);
+    @media (max-width: $wrapper-pad) {
         margin-bottom: 32px;
+    }
+    @media (max-width: $wrapper-mobile) {
+        width: 112px;
+        height: 32px;
+        background-image: url(../assets/header-img/yandex_go-mobile.svg);
     }
 }
 
@@ -66,6 +77,10 @@
     color: $color-text;
     @extend %font-family;
     @include fontText(24px, 500, 130%);
+    @media (max-width: $wrapper-mobile) {
+        margin-top: 35px;
+        @include fontText(18px, 500, 130%);
+      }
   }
 
   .header__toggle_old {
@@ -77,6 +92,10 @@
     text-decoration: line-through;
     border-radius: 500px;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0.63) 100%), radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
+    @media (max-width: $wrapper-mobile) {
+        padding: 7px 5px 7px 53px;
+        @include fontText(13px, 500, 120%);
+      }
   }
 
   .header__toggle_new {
@@ -89,4 +108,8 @@
     border-radius: 500px;
     background: radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
     color: $color-text;
+    @media (max-width: $wrapper-mobile) {
+        padding: 5px 8px 5px 7px;
+        @include fontText(18px, 500, 120%);
+      }
   }

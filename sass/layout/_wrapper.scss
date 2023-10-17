@@ -1,16 +1,22 @@
 .all-wrapper {
     max-width: $all-wrapper-desctop;
     margin: auto;
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         width: $all-wrapper-tablet;
+    }
+    @media (max-width: $wrapper-mobile) {
+        width: $all-wrapper-mobile;
     }
 }
 
 .wrapper {
     max-width: $content-width;
     margin: auto;
-    @media (max-width: 1239px) {
+    @media (max-width: $wrapper-pad) {
         width: $content-tablet-width;
+    }
+    @media (max-width: $wrapper-mobile) {
+        width: $content-mobile-width;
     }
 }
 
