@@ -18,11 +18,22 @@ showSlides(slideIndex);
 function showSlides(n) {
     if (n > slides.length) {
         slideIndex = slides.length;
-        next.classList.add('notActiv');
     }
     if (n < 1) {
         slideIndex = 1;
+    }
+
+    if (n === 1) {
         prev.classList.add('notActiv');
+    }
+    if (n === slides.length) {
+        next.classList.add('notActiv');
+    }
+    if (n > 1) {
+        prev.classList.remove('notActiv');
+    }
+    if (n < slides.length) {
+        next.classList.remove('notActiv');
     }
 
     slides.forEach((item) => {
@@ -37,21 +48,8 @@ function plusSlide(n) {
 
 prev.addEventListener('click', () =>{
     plusSlide(-1);
-
-    slides.forEach((item, index) => {
-        if (index !== slides.length) {
-         console.log('hhh');
-         next.classList.remove('notActiv');
-        }
-     })
 })
 
 next.addEventListener('click', () =>{
     plusSlide(1);
-    
-    slides.forEach((item, index) => {
-       if (index !== 0) {
-        prev.classList.remove('notActiv');
-       }
-    })
 })

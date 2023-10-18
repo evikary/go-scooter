@@ -166,8 +166,8 @@ h3 {
 }
 @media (max-width: 768px) {
   .button_scrolled {
-    max-width: 45%;
-    left: 27%;
+    width: 311px;
+    margin: auto;
   }
 }
 
@@ -194,7 +194,7 @@ h3 {
 }
 
 .arrow {
-  padding: 5.3px 12px;
+  padding: 6.2px 12px;
   font-size: 30px;
   background-color: #FFDE40;
   border-radius: 50%;
@@ -202,6 +202,14 @@ h3 {
 }
 .arrow:hover {
   background: rgb(255, 142, 255);
+}
+
+.arrow__prev {
+  width: 24px;
+}
+
+.arrow__next {
+  width: 24px;
 }
 
 .notActiv {
@@ -235,6 +243,7 @@ h3 {
 @media (max-width: 768px) {
   .wrapper {
     width: 344px;
+    position: relative;
   }
 }
 

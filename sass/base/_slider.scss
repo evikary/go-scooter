@@ -11,7 +11,7 @@
 }
 
 .arrow {
-    padding: 5.3px 12px;
+    padding: 6.2px 12px;
     font-size: 30px;
     background-color: #FFDE40;
     border-radius: 50%;
@@ -19,6 +19,14 @@
     &:hover {
         background: rgb(255, 142, 255);
     }
+}
+
+.arrow__prev {
+    width: 24px;
+}
+
+.arrow__next {
+    width: 24px;
 }
 
 .notActiv {

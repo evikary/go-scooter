@@ -17,6 +17,7 @@
     }
     @media (max-width: $wrapper-mobile) {
         width: $content-mobile-width;
+        position: relative;
     }
 }
 

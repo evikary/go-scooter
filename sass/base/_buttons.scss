@@ -35,8 +35,8 @@
       animation-fill-mode: forwards;
     }
     @media (max-width: $wrapper-mobile) {
-      max-width: 45%;
-      left: 27%;
+      width: 311px;
+      margin: auto;
     }
   }
   }
