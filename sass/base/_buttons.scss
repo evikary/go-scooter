@@ -29,7 +29,7 @@
   &_scrolled {
     @media (max-width: $wrapper-pad) {
       position: fixed;
-      z-index: 3;
+      z-index: 4;
       max-width: 100%;
       animation-name: fadeindown;
       animation-duration: 1.5s;

@@ -158,7 +158,8 @@ h3 {
 @media (max-width: 1239px) {
   .button_scrolled {
     position: fixed;
-    max-width: 50%;
+    z-index: 4;
+    max-width: 100%;
     animation-name: fadeindown;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
