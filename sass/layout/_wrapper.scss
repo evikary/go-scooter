@@ -6,6 +6,7 @@
     }
     @media (max-width: $wrapper-mobile) {
         width: $all-wrapper-mobile;
+        position: relative;
     }
 }
 
@@ -17,7 +18,6 @@
     }
     @media (max-width: $wrapper-mobile) {
         width: $content-mobile-width;
-        position: relative;
     }
 }
 
