@@ -1,1 +1,1 @@
-# go-scooter
+https://evikary.github.io/go-scooter/
