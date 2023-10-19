@@ -26,12 +26,6 @@
       @include fontText(18px, 500, 22px);
     }
 
-    .in-plus__right-content .button {
-      @media (max-width: $wrapper-mobile) {
-        margin-left: 17px;
-      }
-    }
-   
   &_scrolled {
     @media (max-width: $wrapper-pad) {
       position: fixed;
@@ -46,6 +40,12 @@
       margin: auto;
     }
   }
+  }
+
+  .in-plus__right-content .button {
+    @media (max-width: $wrapper-mobile) {
+      margin-left: 17px;
+    }
   }
 
   @keyframes fadeindown {
